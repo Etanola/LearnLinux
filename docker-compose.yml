@@ -1,0 +1,11 @@
+services:
+  llinux:
+    build: .
+    image: llinux
+    container_name: llinux
+    restart: always
+    ports:
+      - 8009:8008
+    volumes: 
+      - /mnt/c/Users/Etano/Documents/etano/lowlayer/LeanLinux:/home
+    tty: true
